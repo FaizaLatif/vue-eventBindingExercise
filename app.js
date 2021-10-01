@@ -1,7 +1,8 @@
 Vue.createApp({
     data() {
         return {
-            exercise2: ''
+            exercise2: '',
+            exercise3: '',
         }
     },
     methods: {
@@ -10,6 +11,9 @@ Vue.createApp({
         },
         setValue(event) {
             this.exercise2 = event.target.value;
+        },
+        setOtherValue(event) {
+            this.exercise3 = event.target.value;
         }
     }
 }).mount('#assignment');
